@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "flightfpv",
+	"version": "${version}",
+	"name": "FlightFPV",
+	"description": "This is a FPV mod for 1.21!",
+	"authors": [
+		"Thighs!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/flightfpv/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.michael.flightfpv.FlightFPV"
+		],
+		"fabric-datagen": [
+			"net.michael.flightfpv.FlightFPVDataGenerator"
+		],
+		"client": [
+			"net.michael.flightfpv.FlightFPVClient"
+		]
+	},
+	"mixins": [
+		"flightfpv.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
